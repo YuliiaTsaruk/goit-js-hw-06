@@ -8,8 +8,7 @@ const ingredients = [
 ];
 
 const ingredientsList = document.querySelector("#ingredients");
-
-// console.dir(li);
+// console.dir(ingredientsList);
 
 const liMarkup = ingredients.map((ingredient) => {
   const li = document.createElement("li");
@@ -18,4 +17,6 @@ const liMarkup = ingredients.map((ingredient) => {
   return li;
 });
 
-console.dir(li);
+ingredientsList.append(...liMarkup);
+
+// console.log(liMarkup);
