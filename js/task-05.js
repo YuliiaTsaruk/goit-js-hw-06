@@ -12,7 +12,7 @@ console.log(textOutput);
 
 textInput.addEventListener("input", handleInput);
 function handleInput(event) {
-  const inputValue = event.currentTarget.value;
+  const inputValue = event.currentTarget.value.trim();
   //   console.log(inputValue);
   if (inputValue) {
     return (textOutput.textContent = inputValue);

@@ -29,9 +29,9 @@ const textInput = document.querySelector("#validation-input");
 // console.log(textInput.dataset.length);
 textInput.addEventListener("blur", handleInput);
 function handleInput(evt) {
-  const inputValue = evt.currentTarget.value;
+  const inputValue = evt.currentTarget.value.trim();
   //   console.log(inputValueLength);
-  if (inputValue.length === parseInt(textInput.dataset.length)) {
+  if (inputValue.length === Number(textInput.dataset.length)) {
     textInput.classList.add("valid");
     textInput.classList.remove("invalid");
   } else {
