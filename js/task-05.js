@@ -7,8 +7,8 @@
 const textInput = document.querySelector("#name-input");
 const textOutput = document.querySelector("#name-output");
 
-console.log(textInput);
-console.log(textOutput);
+// console.log(textInput);
+// console.log(textOutput);
 
 textInput.addEventListener("input", handleInput);
 function handleInput(event) {
